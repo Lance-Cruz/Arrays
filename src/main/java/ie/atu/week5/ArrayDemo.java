@@ -13,9 +13,7 @@ public class ArrayDemo {
             anArray[i] = (i + 1) * 100;
         }
 
-        for (int i = 0; i < anArray.length; i++) {
-            System.out.println("Element at index " + i + ": " + anArray[i]);
-        }
+        printArray(anArray);
 
         Scanner sc = new Scanner(System.in);
 
@@ -27,5 +25,13 @@ public class ArrayDemo {
 
         System.out.println("Element at index 10 : " + anArray[10]);
 
+    }
+
+    public static void printArray(int[] array) {
+        int index = 0;
+        for (int element : array){
+            System.out.println("The element at index " + index + " : " + element);
+            index++;
+        }
     }
 }
