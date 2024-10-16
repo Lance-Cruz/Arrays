@@ -21,9 +21,13 @@ public class ArrayDemo {
 
         int newValue = sc.nextInt();
 
-        anArray[10] = newValue;
-
-        System.out.println("Element at index 10 : " + anArray[10]);
+        try{
+            anArray[10] = newValue;
+            System.out.println("Element at index 10 : " + anArray[10]);
+        }
+        catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Error: Attempted to catch an array that is out of bounds");
+        }
 
     }
 
